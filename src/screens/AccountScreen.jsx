@@ -51,6 +51,7 @@ export default function AccountScreen({ navigation }) {
         <Text variant="headlineMedium">Sua conta</Text>
         <Text>Bem vind(a) {usuario?.name}</Text>
         <Button onPress={loggout}>Sair</Button>
+        
       </View>
     </View>
   );

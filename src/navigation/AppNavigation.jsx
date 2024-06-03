@@ -8,6 +8,7 @@ import RegisterScreen from "../screens/RegisterScreen";
 import SplashScreen from "../screens/SplashScreen";
 import NoticiasScreen from "../screens/NoticiasScreen";
 import AccountScreen from "../screens/AccountScreen";
+import NoteScreen from "../screens/NoteScreen";
 
 const Stack = createNativeStackNavigator();
 const Tabs = createMaterialBottomTabNavigator();
@@ -53,6 +54,14 @@ const TabNavigator = () => {
           tabBarIcon: "home",
         }}
         component={HomeScreen}
+      />
+      <Tabs.Screen
+        options={{
+          tabBarLabel: "Notes",
+          tabBarIcon: "note",
+        }}
+        name="NotesScreen"
+        component={NoteScreen}
       />
       <Tabs.Screen
         options={{
