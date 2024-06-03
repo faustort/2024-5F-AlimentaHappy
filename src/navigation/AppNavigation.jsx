@@ -35,8 +35,8 @@ const AccountNavigator = () => {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="AccountScreen" component={AccountScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
+      <Stack.Screen name="AccountScreen" component={AccountScreen} />
       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
       <Stack.Screen name="RecoveryScreen" component={RecoveryPassword} />
     </Stack.Navigator>
