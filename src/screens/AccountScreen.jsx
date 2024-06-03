@@ -6,7 +6,6 @@ import { auth } from "./../config/firebase";
 import { db } from "./../config/firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { signOut } from "firebase/auth";
-import NotesScreen from "./NoteScreen";
 
 export default function AccountScreen({ navigation }) {
   const [usuario, setUsario] = useState(null);
@@ -52,7 +51,6 @@ export default function AccountScreen({ navigation }) {
         <Text variant="headlineMedium">Sua conta</Text>
         <Text>Bem vind(a) {usuario?.name}</Text>
         <Button onPress={loggout}>Sair</Button>
-        <NotesScreen />
       </View>
     </View>
   );
